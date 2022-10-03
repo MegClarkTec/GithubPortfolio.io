@@ -1,0 +1,64 @@
+<div class="grid">
+    <header>
+     <b> Megan's Git Portfolio </b>
+    </header>
+  
+    <aside class="sidebar-left">
+      <b>Links to projects</b>
+    </aside>
+  
+    <article>
+      Hello, I am Megan. I am 33 years old and a single mom of two kids.
+      I currently work in a casino in the finance department.
+      I have gone through many changes in what I wanted to do as a career over the years.
+      I decided to dive into the world of coding to have a career that would not keep me far from home and my kids.
+      I am currently enrolled in the MITxPro fullstack webdev course and set to graduate in April 2022.
+
+    </article>
+  
+    <aside class="sidebar-right">
+      <img src="BioPic2.jpg" width="100">
+
+    </aside>
+    
+    <footer>
+      Thank you for visiting!
+    </footer>
+  </div>
+  <style>
+    .grid {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-gap: 1em;
+}
+
+header, footer {
+  grid-column: 1 / 4;
+}
+
+@media all and (max-width: 700px) {
+  aside,
+  article {
+    grid-column: 1 / 4;
+  }
+}
+
+/* Demo Specific Styles */
+body {
+  margin: 0 auto;
+  max-width: 56em;
+  padding: 1em 0;
+}
+
+header,
+aside,
+article,
+footer {
+  background:black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+}
+  </style>
